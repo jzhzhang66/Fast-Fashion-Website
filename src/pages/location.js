@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Nav from "../components/Nav/Nav";
 import "antd/dist/antd.css";
-import { Menu, Dropdown } from "antd";
+import { Menu, Dropdown, Space } from "antd";
 import { DownOutlined } from "@ant-design/icons";
 import Landfill from "../images/Landfill.png";
 import WaterPollution from "../images/water-pollution.jpeg";
@@ -23,7 +23,7 @@ const LocationPage = () => {
   return (
     <>
       <Nav />
-      <Dropdown overlay={menu(setLocation)}>
+      <Dropdown overlay={menu(setLocation)} >
         <a className="ant-dropdown-link">
           Check out our locations!
           <DownOutlined />
