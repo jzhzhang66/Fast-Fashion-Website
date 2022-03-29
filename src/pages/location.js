@@ -28,7 +28,6 @@ const LocationPage = () => {
           Check out our locations!
           <DownOutlined />
         </a>
-        {/* { location && <img src={location === 'LA' ? Landfill : WaterPollution} />} */}
       </Dropdown>
       {location === "LA" && <img src={Landfill} />}
       {location === "NYC" && <img src={WaterPollution} />}
