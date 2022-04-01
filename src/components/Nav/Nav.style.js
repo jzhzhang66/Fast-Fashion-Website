@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 
-const List = styled.ul`
-    list-style: none;
+const NavContainer = styled.div`
+    padding: 1rem;
+    a {
+        font-size: 1.5em;
+    }
+
 `;
 
-const ListItem = styled.li`
-    
-`;
-
-export { List, ListItem };
+export { NavContainer };

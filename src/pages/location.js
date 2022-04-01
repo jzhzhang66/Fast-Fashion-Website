@@ -1,10 +1,13 @@
 import React, { useState } from "react";
 import Nav from "../components/Nav/Nav";
 import "antd/dist/antd.css";
-import { Menu, Dropdown, Space } from "antd";
+import { Menu, Dropdown } from "antd";
 import { DownOutlined } from "@ant-design/icons";
 import Landfill from "../images/Landfill.png";
 import WaterPollution from "../images/water-pollution.jpeg";
+import { LocationContentContainer } from "../styles/location.style";
+import { ShienLogoStyled } from "../styles/clothing.style";
+import ShienLogo from "../images/shienLogo.png";
 
 const menu = (setLocation) => (
   <Menu>
@@ -23,14 +26,19 @@ const LocationPage = () => {
   return (
     <>
       <Nav />
-      <Dropdown overlay={menu(setLocation)} >
-        <a className="ant-dropdown-link">
-          Check out our locations!
-          <DownOutlined />
-        </a>
-      </Dropdown>
-      {location === "LA" && <img src={Landfill} />}
-      {location === "NYC" && <img src={WaterPollution} />}
+      <ShienLogoStyled src={ShienLogo} />
+      <LocationContentContainer>
+        <Dropdown overlay={menu(setLocation)}>
+          <a className="ant-dropdown-link">
+            Check out our locations!
+            <DownOutlined style={{fontSize: '1.5rem'}} />
+          </a>
+        </Dropdown>
+        <div>
+          {location === "LA" && <img src={Landfill} />}
+          {location === "NYC" && <img src={WaterPollution} />}
+        </div>
+      </LocationContentContainer>
     </>
   );
 };
