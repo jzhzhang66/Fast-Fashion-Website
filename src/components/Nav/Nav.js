@@ -4,11 +4,8 @@ const Nav = () => {
   return (
     <>
       <Menu mode="horizontal">
-        <Menu.Item href="/clothing">
-          <a href="/clothing">Clothing</a>
-        </Menu.Item>
-        <Menu.Item href="/shoes">
-          <a href="/shoes">Shoes</a>
+        <Menu.Item href="/">
+          <a href="/">Clothing</a>
         </Menu.Item>
         <Menu.Item>
           <a href="/location">Location</a>
