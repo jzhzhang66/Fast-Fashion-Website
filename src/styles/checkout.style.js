@@ -28,4 +28,7 @@ const TotalButtonContainer = styled.div`
   padding-left: 10rem;
 `;
 
-export { ItemImage, CheckoutContainer, CardContainer, ClothesContainer, Price, TotalButtonContainer };
+const WastedContainer = styled.div`
+  padding-top: 5rem;
+`;
+export { ItemImage, CheckoutContainer, CardContainer, ClothesContainer, Price, TotalButtonContainer, WastedContainer };

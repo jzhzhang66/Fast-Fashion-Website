@@ -12,6 +12,7 @@ import {
   ClothesContainer,
   Price,
   TotalButtonContainer,
+  WastedContainer
 } from "../styles/checkout.style";
 
 const clothes = [
@@ -46,6 +47,13 @@ const CheckoutPage = () => {
         <TotalButtonContainer>
           <Price>Total: $44.00 </Price>
           <Button href="/completed-checkout">Confirm Order</Button>
+          <WastedContainer>
+            <h2>
+              Here's how much you're polluting the environment just by shopping Shien:
+            </h2>
+            <h3>CO2 Wasted: 8 lbs.</h3>
+            <h3>Water Wasted: 4 gal.</h3>
+          </WastedContainer>
         </TotalButtonContainer>
       </CheckoutContainer>
     </>
