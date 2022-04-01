@@ -3,7 +3,7 @@ import Nav from "../components/Nav/Nav";
 import "antd/dist/antd.css";
 import { Menu, Dropdown } from "antd";
 import { DownOutlined } from "@ant-design/icons";
-import Landfill from "../images/Landfill.png";
+import Landfill from "../images/landfill.png";
 import WaterPollution from "../images/water-pollution.jpeg";
 import { LocationContentContainer } from "../styles/location.style";
 import { ShienLogoStyled } from "../styles/clothing.style";
